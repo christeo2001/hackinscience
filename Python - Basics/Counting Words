@@ -1,4 +1,4 @@
-// Counts the number of words in a paragraph
+## Counts the number of words in a paragraph
 
 phantom_menace = """Turmoil has engulfed the Galactic Republic. The
 taxation of trade routes to outlying star systems is in
@@ -14,4 +14,4 @@ splitted_words = phantom_menace.split() // Seperates each word in string
 words = len(splitted_words)
 
 print(words)
-// 78
+## 78
