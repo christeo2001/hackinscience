@@ -1,4 +1,4 @@
-// Catch IndexError and print "Not enough parameters"
+## Catch IndexError and print "Not enough parameters"
 
 import sys
 
