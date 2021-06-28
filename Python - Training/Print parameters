@@ -1,0 +1,5 @@
+// Write a script that prints it own file name
+
+import sys
+
+print(sys.argv[0])
