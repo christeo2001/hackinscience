@@ -1,0 +1,17 @@
+// Finds the distance between the two furthest apart value in list
+
+def dist(points):
+    points.sort()
+    distance = points[len(points) - 1] - points[0]
+    if distance < 0:
+        distance *= -1
+        
+    return distance
+
+if __name__ == "__main__":
+    assert dist([1, 2, 3]) == 2
+    assert dist([1, 2, 3, 2.5]) == 2
+    assert dist([1, 2, 3, 2.5, 3.5]) == 2.5
+    assert dist([1, 2, 3, 2.5, 3.5, 120]) == 119
+    assert dist([1, 2, 3, 2.5, 3.5, 120, -1000]) == 1120
+    
