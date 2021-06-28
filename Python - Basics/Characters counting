@@ -1,4 +1,4 @@
-// print number of characters in the paragraph
+## print number of characters in the paragraph
 
 phantom_menace = """Turmoil has engulfed the Galactic Republic. The
 taxation of trade routes to outlying star systems is in
@@ -11,4 +11,4 @@ peace and justice in the galaxy, to settle the conflict"""
 
 
 print(len(phantom_menace))  
-// 485
+## 485
