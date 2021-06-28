@@ -1,17 +1,17 @@
-// Exercise 1
-// Write a functon sort_a_list that takes a list and return the list in descending order
+## Exercise 1
+## Write a functon sort_a_list that takes a list and return the list in descending order
 
 def sort_a_list(a_list):
     return sorted(a_list, reverse = True)
 
-// Exercise 2
+## Exercise 2
 // Write a function sort_by_mark that takes a list and returns it sorted by mark in the descending order
 
 def sort_by_mark(my_class):
     return sorted(my_class, reverse = True)
 
-// Exercise 3
-// Write a function sort_by_name that takes a list and returns it sorted by name in the ascending order
+## Exercise 3
+## Write a function sort_by_name that takes a list and returns it sorted by name in the ascending order
 def sort_by_name(my_class):
     def name(n):
         return n[1]
@@ -29,6 +29,6 @@ if __name__ == "__main__":
     print(sort_by_mark(my_class))
     print(sort_by_name(my_class))
     
-// [9, 7, 6, 5, 4, 3, 2, 1]
-// [[85, 'Susan Maddox'], [84, 'Joseph Pedersen'], [42, 'Lidia Robel'], [37, 'Jeanette Wafer'], [36, 'John Freeman'], [27, 'Betty Askins'], [22, 'Mark Osbourne'], [12, 'Bonnie Torres'], [6, 'Joshua Tran']]
-// [[27, 'Betty Askins'], [12, 'Bonnie Torres'], [37, 'Jeanette Wafer'], [36, 'John Freeman'], [84, 'Joseph Pedersen'], [6, 'Joshua Tran'], [42, 'Lidia Robel'], [22, 'Mark Osbourne'], [85, 'Susan Maddox']]
+## [9, 7, 6, 5, 4, 3, 2, 1]
+## [[85, 'Susan Maddox'], [84, 'Joseph Pedersen'], [42, 'Lidia Robel'], [37, 'Jeanette Wafer'], [36, 'John Freeman'], [27, 'Betty Askins'], [22, 'Mark Osbourne'], [12, 'Bonnie Torres'], [6, 'Joshua Tran']]
+## [[27, 'Betty Askins'], [12, 'Bonnie Torres'], [37, 'Jeanette Wafer'], [36, 'John Freeman'], [84, 'Joseph Pedersen'], [6, 'Joshua Tran'], [42, 'Lidia Robel'], [22, 'Mark Osbourne'], [85, 'Susan Maddox']]
