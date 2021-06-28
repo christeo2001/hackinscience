@@ -1,3 +1,4 @@
 // Prints string "Hello World!" in console
 
-print("Hello world!")   // Hello world!
+print("Hello world!")
+// Hello world!
