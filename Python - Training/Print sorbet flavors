@@ -1,4 +1,4 @@
-// Print every possible sorbet duo
+## Print every possible sorbet duo
 
 FLAVORS = [
     "Banana",
