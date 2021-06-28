@@ -1,0 +1,4 @@
+// Prints the first 10 powers of two
+
+for i in range(10): // Iterates i from 1 to 10
+  print(2**i) // Prints 2**i for each iteration
