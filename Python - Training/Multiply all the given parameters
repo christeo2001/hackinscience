@@ -1,0 +1,14 @@
+## Write a function "mul" that multiplies all numbers of a given list of numbers
+
+def mul(numbers):
+    res = 1
+    for num in numbers:
+        res *= num
+        
+    return res
+        
+        
+if __name__ == "__main__":
+    assert mul([1, 2, 3]) == 6
+    assert mul([0, 1, 2, 3]) == 0
+    assert mul([2, 3, 4]) == 24
