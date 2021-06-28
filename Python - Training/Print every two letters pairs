@@ -1,0 +1,9 @@
+// Print every possible pairs of two letters in lowercase
+
+import string
+
+low_case = string.ascii_lowercase // gets all the alphabets in lowercase
+
+for alpha in low_case: 
+    for beta in low_case:
+        print(alpha + beta)
