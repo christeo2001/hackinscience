@@ -1,0 +1,10 @@
+// Print the sum of all natural numbers below 1000 that are multiples of 3 or 5
+
+sum = 0 // Inital value
+
+for num in range(1000): // Iterates num from 1 to 1000
+    if num % 3 == 0 or num % 5 == 0: // If num is multiple of 3 or 5
+        sum += num // Add num to sum
+        
+print(sum)        
+// 233168
