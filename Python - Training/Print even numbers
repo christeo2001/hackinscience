@@ -1,5 +1,5 @@
-// Print every even numbers in a given range (1, 100)
+## Print every even numbers in a given range (1, 100)
 
-for num in range (1, 101): // iterates num in range 1 to 100
-    if num % 2 == 0:  // if remainder of num divided by 2 i
-        print(num) // print num
+for num in range (1, 101): ## iterates num in range 1 to 100
+    if num % 2 == 0:  ## if remainder of num divided by 2 i
+        print(num) ## print num
