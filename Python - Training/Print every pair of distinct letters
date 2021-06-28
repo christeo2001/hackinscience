@@ -1,0 +1,10 @@
+// Print every pair of two different letters
+
+import string
+
+low_case = string.ascii_lowercase
+
+for alpha in low_case:
+    for beta in low_case:
+        if alpha != beta:
+            print(alpha + beta)
