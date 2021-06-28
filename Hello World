@@ -1,0 +1,2 @@
+// prints string "Hello World!" in console
+print("Hello world!")
