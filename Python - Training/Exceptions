@@ -1,0 +1,9 @@
+// Catch IndexError and print "Not enough parameters"
+
+import sys
+
+try:
+    print(sys.argv[1])
+
+except IndexError:
+    print("Not enough parameters.")
