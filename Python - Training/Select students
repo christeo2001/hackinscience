@@ -1,4 +1,4 @@
-// Write a function telling appart accepted and refused students according to a threshold
+## Write a function telling appart accepted and refused students according to a threshold
 
 def select_student(students, threshold):
     result = {"Accepted": [], "Refused": []}
@@ -34,4 +34,4 @@ if __name__ == "__main__":
         ],
         20,
     ))
-// {'Accepted': [['Hattie Schleusner', 67], ['Kermit Wade', 27]], 'Refused': [['William Lee', 2], ['Ben Ball', 5]]}
+## {'Accepted': [['Hattie Schleusner', 67], ['Kermit Wade', 27]], 'Refused': [['William Lee', 2], ['Ben Ball', 5]]}
