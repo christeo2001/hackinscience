@@ -1,5 +1,5 @@
-// Exercise 1
-// Code a function named love_meet taking 2 lists and returning a set of places visited by both
+## Exercise 1
+## Code a function named love_meet taking 2 lists and returning a set of places visited by both
 
 def love_meet(bob, alice):
     same = set()
@@ -22,8 +22,8 @@ def love_meet(bob, alice):
             
     return same
     
-// Exercise 2
-// Code a function named affair_meet taking 3 lists and returns a set of places visited by A and S but not B
+## Exercise 2
+## Code a function named affair_meet taking 3 lists and returns a set of places visited by A and S but not B
 
 
 def affair_meet(bob, alice, silvester):
