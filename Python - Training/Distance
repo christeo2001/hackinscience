@@ -1,4 +1,4 @@
-// Finds the distance between the two furthest apart value in list
+## Finds the distance between the two furthest apart value in list
 
 def dist(points):
     points.sort()
