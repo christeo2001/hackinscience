@@ -1,5 +1,5 @@
-// Prints the 10 first square number
+## Prints the 10 first square number
 
-for i in range (0,10): // Iterates i from 0 - 9
+for i in range (0,10): ## Iterates i from 0 - 9
   print(i**2) // Prints i**2 for each iteration
-// 0, 1, 4, 9, 16, 25, 36, 49, 64, 81
+## 0, 1, 4, 9, 16, 25, 36, 49, 64, 81
