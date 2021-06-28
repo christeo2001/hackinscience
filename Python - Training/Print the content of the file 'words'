@@ -1,0 +1,7 @@
+## Write a program which reads and prints the content of the words.txt file
+
+f = open("words.txt", mode="r")
+
+content = f.read()
+
+print(content)
