@@ -1,10 +1,10 @@
-// Prints the sum of every number in range [0, 100]
+## Prints the sum of every number in range [0, 100]
 
-sum = 0 // Initial value
+sum = 0 ## Initial value
 
-for num in range(101): // Iterates num from 1 to 100
-    if num % 2 == 0: // if num is even
-        sum += num // add num to sum
+for num in range(101): ## Iterates num from 1 to 100
+    if num % 2 == 0: ## if num is even
+        sum += num ## add num to sum
         
 print(sum)     
-// 2550
+## 2550
