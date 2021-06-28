@@ -1,4 +1,4 @@
-// Write a function computing the perimeter of a circle with given radius
+## Write a function computing the perimeter of a circle with given radius
 
 import math
 
@@ -7,4 +7,4 @@ def circle_perimeter(radius):
   
 if __name__ == "__main__":
     print(circle_perimeter(1))
-// 6.283185307179586
+## 6.283185307179586
