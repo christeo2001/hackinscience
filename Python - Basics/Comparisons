@@ -1,4 +1,4 @@
-// Gets the biggest value in a list
+## Gets the biggest value in a list
 
 the_list = [
     143266561,
@@ -14,4 +14,4 @@ the_list = [
 ]
 
 print(max(the_list))
-// 1871655963
+## 1871655963
