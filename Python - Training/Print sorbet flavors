@@ -1,0 +1,16 @@
+// Print every possible sorbet duo
+
+FLAVORS = [
+    "Banana",
+    "Chocolate",
+    "Lemon",
+    "Pistachio",
+    "Raspberry",
+    "Strawberry",
+    "Vanilla",
+]
+
+for first_flavour in FLAVORS:
+    for second_flavour in FLAVORS:
+        if first_flavour < second_flavour:
+            print(first_flavour + ", " + second_flavour)
