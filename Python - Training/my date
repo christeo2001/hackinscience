@@ -1,4 +1,4 @@
-// Print the current date (Year month day hour minute seconds)
+## Print the current date (Year month day hour minute seconds)
 
 import datetime 
 from datetime import date
@@ -8,4 +8,4 @@ date = date.today() // gets current date
 time = str(datetime.datetime.now().time())[:8] // gets current time
 
 print("Today is", str(date), "and it is", str(time) + ".")
-// Today is 2021-06-28 and it is 05:46:57.
+## Today is 2021-06-28 and it is 05:46:57.
