@@ -1,0 +1,10 @@
+## Print all number in a range, that are divisible by 7 and whose sum are divisible by 3
+
+for i in range(0, 1000):
+    sum = 0
+    i_splitted = str(i).split() ## split each number and add them individually
+    for num in i_splitted:
+        sum += int(num)
+    
+    if (i % 7 == 0) and (sum % 3 == 0):
+        print (num)
