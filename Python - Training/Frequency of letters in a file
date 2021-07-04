@@ -1,0 +1,19 @@
+## read a text file and cimpute the frequency of every ascii lowercase letters
+
+f = open("words.txt", mode = "r")
+text = f.read()
+
+legal = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+appeared = []
+data = {}
+
+for letters in text:
+    if letters in legal:
+        if letters not in appeared:
+            appeared.append(letters)
+            data[letters] = 1/len(text)
+        else:
+            data[letters] = data[letters] + 1/len(text)
+
+for keys, values in data.items():
+    print(keys + ": {:0.2f}".format(values))
