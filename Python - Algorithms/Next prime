@@ -1,0 +1,17 @@
+## Provide a script that computes and prints the first prime number greater than 100000000
+
+x = 100000000
+
+def is_prime(num):
+    check = True
+    for i in range (2, num):
+        if (num % i == 0):
+            check = False
+            break
+    return check
+    
+while is_prime(x) == False:
+    x += 1
+    
+print (x)
+## 100000007
