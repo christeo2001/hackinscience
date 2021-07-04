@@ -1,0 +1,8 @@
+## Write a function named battery_charge that graphically represents a battery's charge
+
+def battery_charge(num):
+    bars = round((num / 100)*10)
+    spaces = " " * (10 - bars)
+    a = "|" * bars
+    print("[" + a + spaces + "]")
+    print(str(num) + "%")
