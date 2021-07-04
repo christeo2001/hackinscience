@@ -1,0 +1,24 @@
+## Write a function named filteres taking an iterable list and a filter (lambda expression) and return a processed list
+
+def filtered (lis, filte):
+    emp = []
+    for i in lis:
+        if filte(i) == True:
+            emp.append(i)
+    return emp
+      
+    
+def printer(lis):
+    to_be = []
+    for i in lis:
+        to_be.append(str(i))
+    print(", ".join(to_be))        
+   
+if __name__ == "__main__":
+    a = []
+    for i in range (0, 101):
+        a.append(i)
+        
+    first = (filtered(a, lambda x: x % 3 == 0))
+    second = (filtered(a, lambda x: x % 5 == 0))
+    third = (filtered(a, lambda x: x % 15 == 0))
