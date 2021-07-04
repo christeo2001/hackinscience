@@ -1,0 +1,11 @@
+## Provide a function named list_pretty_print that takes a list of integer and prints them
+
+def list_pretty_print(items):
+    lis = []
+
+    
+    for i in items:
+        lis.append(str(i))
+    
+    for i in range (round(len(items)/5) + 1):
+        print(", ".join(lis[i*5: (i+1)*5]))
