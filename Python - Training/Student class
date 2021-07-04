@@ -1,0 +1,77 @@
+## Create a Student, School and City class
+
+class Student:
+       
+    def __init__(self, name):
+        self.name = name
+        self.marks = []
+        
+            
+    def add_exam(self, mark):
+        self.marks.append(mark)
+        self.total = sum(self.marks)
+
+        
+    def get_mean(self):
+        self.mean = self.total // len(self.marks)
+        return self.mean
+        
+        
+class School:
+    
+    def __init__(self, name):
+        self.name = name
+        self.students = []
+        self.total = 0
+        self.best_student = ""
+        self.best_student_mean = 0
+        
+    def add_student(self, student):
+        self.students.append(student)
+        self.total += student.get_mean()
+  
+        
+    def get_mean(self):
+        self.mean = 0
+        if len(self.students) > 0:
+            self.mean = self.total // len(self.students)
+        return self.mean
+        
+    def get_best_student(self):
+        for student in self.students:
+            if student.get_mean() > self.best_student_mean:
+                self.best_student = student
+                self.best_student_mean = student.get_mean()
+        return self.best_student
+        
+class City:
+    
+    def __init__(self, name):
+        self.name = name
+        self.schools = []
+        self.total = 0
+        self.best_students = []
+        
+    def add_school(self, school):
+        self.schools.append(school)
+        self.total += school.get_mean()
+        
+    def get_best_school(self):
+        self.best_school = ""
+        self.best_school_mean = 0
+        for school in self.schools:
+            if school.get_mean() > self.best_school_mean:
+                self.best_school = school
+                self.best_school_mean = school.get_mean()
+        return self.best_school
+        
+    def get_best_student(self):
+        self.best_student = ""
+        self.best_student_mean = 0
+        for school in self.schools:
+            self.best_students.append(school.get_best_student())
+        for student in self.best_students:
+            if student.get_mean() > self.best_student_mean:
+                self.best_student = student
+                self.best_student_mean = student.get_mean()
+        return self.best_student
