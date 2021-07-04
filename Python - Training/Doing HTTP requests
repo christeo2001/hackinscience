@@ -1,0 +1,7 @@
+## Write a program that grabs content from the web
+
+try:
+    r = request.get('https://api.github.com/users/python', auth=('user', 'pass'))
+    print (r)
+except:
+    print('No internet connectivity.')
