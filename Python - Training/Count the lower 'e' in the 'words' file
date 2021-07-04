@@ -1,0 +1,11 @@
+## Counts the number of 'e' in a file
+
+f = open("words.txt", mode = "r") ## open the file in read mode
+word = f.read() ## read the file
+
+sum = 0
+for letters in word:
+    if letters == "e":  ## increment sum by 1 for each 'e' that appears
+        sum += 1
+        
+print(sum)
