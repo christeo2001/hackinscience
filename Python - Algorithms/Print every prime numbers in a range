@@ -1,0 +1,20 @@
+## Write a script that prints every prime number in the range [10000; 10050] in a line seperated by ", "
+
+list = []
+
+def is_prime(num):
+    check = True
+    for i in range (2, num):
+        if (num % i == 0):
+            check = False
+            break
+    return check
+    
+def printer(num1, num2):
+    for num in range (num1 + 1, num2):
+        if is_prime(num) == True:
+            list.append(num)
+            
+    return str(list)[1:-1]
+    
+print(printer(10000, 10050))
