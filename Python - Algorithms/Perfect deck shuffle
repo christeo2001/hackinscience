@@ -1,0 +1,19 @@
+## Create a function that takes in a list and shuffles it by halving the deck and interleaving them
+
+def perfect_shuffle(deck):
+    a = (deck[0: len(deck)//2])
+    b = (deck[len(deck)//2: len(deck)])
+    
+    newDeck = []
+    
+    i = 0
+    
+    while i < len(a):
+        newDeck.append(a[i])
+        newDeck.append(b[i])
+        i += 1
+        
+    return newDeck
+    
+print(perfect_shuffle([1, 2, 3, 4, 5, 6]))
+##  [1, 4, 2, 5, 3, 6]
