@@ -1,0 +1,26 @@
+Write a function named friday_the_13th, which takes no parameter, and just returns the date of the next friday the 13th.
+
+from datetime import date, timedelta
+import datetime
+from dateutil.relativedelta import relativedelta
+
+def friday_the_13th():
+    if date.today().day == 13 and date.today().weekday() == 4:
+        return str(date.today())
+    
+    if int(date.today().day) > 13:
+        num = int(date.today().day) - 13
+        fri_13 = date.today() - datetime.timedelta(days = num)
+    else:
+        num = 13 - int(date.today().day)
+        fri_13 = date.today() + datetime.timedelta(days = num)
+        if fri_13.weekday() == 4:
+            return (str(fri_13))
+
+    for i in range (1, 12):
+        fri13 = fri_13 + relativedelta(months=+i)
+        if fri13.day == 13 and fri13.weekday() == 4:
+            return (str(fri13))
+            
+if __name__ == "__main__":
+    print(friday_the_13th())
